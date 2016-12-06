@@ -70,3 +70,631 @@ Hello~~~~~ I m your SISTA~!!!!!
 SHOW SOME RESPECT~!!!!!
 
 HAHAHAHAHAHAHHAHAHAH~~~~~~~~~~~~~~~~~
+
+
+Last login: Tue Dec  6 09:33:25 on ttys002
+Kwoks-MBP:~ kwokpinglau$ cd 
+.CFUserTextEncoding  .config/             Desktop/
+.DS_Store            .eclipse/            Documents/
+.Trash/              .eclipse_keyring     Downloads/
+.adobe/              .gitconfig           Library/
+.android/            .idlerc/             Movies/
+.atom/               .oracle_jre_usage/   Music/
+.bash_history        .p2/                 Pictures/
+.bash_profile        .ssh/                Public/
+.bash_sessions/      Applications/        eclipse/
+Kwoks-MBP:~ kwokpinglau$ cd M
+Movies/ Music/  
+Kwoks-MBP:~ kwokpinglau$ list
+-bash: list: command not found
+Kwoks-MBP:~ kwokpinglau$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	eclipse
+Kwoks-MBP:~ kwokpinglau$ cd D
+Desktop/   Documents/ Downloads/ 
+Kwoks-MBP:~ kwokpinglau$ cd Documents/Downloads
+-bash: cd: Documents/Downloads: No such file or directory
+Kwoks-MBP:~ kwokpinglau$ cd Documents/Downloads/
+-bash: cd: Documents/Downloads/: No such file or directory
+Kwoks-MBP:~ kwokpinglau$ cd Downloads/
+Kwoks-MBP:Downloads kwokpinglau$ pwd
+/Users/kwokpinglau/Downloads
+Kwoks-MBP:Downloads kwokpinglau$ cd..
+-bash: cd..: command not found
+Kwoks-MBP:Downloads kwokpinglau$ cd.
+-bash: cd.: command not found
+Kwoks-MBP:Downloads kwokpinglau$ cd/
+-bash: cd/: No such file or directory
+Kwoks-MBP:Downloads kwokpinglau$ .. 
+-bash: ..: command not found
+Kwoks-MBP:Downloads kwokpinglau$ ..
+-bash: ..: command not found
+Kwoks-MBP:Downloads kwokpinglau$ ....
+-bash: ....: command not found
+Kwoks-MBP:Downloads kwokpinglau$ pwd
+/Users/kwokpinglau/Downloads
+Kwoks-MBP:Downloads kwokpinglau$ ../
+-bash: ../: is a directory
+Kwoks-MBP:Downloads kwokpinglau$ cd ..
+Kwoks-MBP:~ kwokpinglau$ pwd
+/Users/kwokpinglau
+Kwoks-MBP:~ kwokpinglau$ cd /Users/kwokpinglau/Documents/AP104_Git 
+Kwoks-MBP:AP104_Git kwokpinglau$ pwd
+/Users/kwokpinglau/Documents/AP104_Git
+Kwoks-MBP:AP104_Git kwokpinglau$ git init
+Initialized empty Git repository in /Users/kwokpinglau/Documents/AP104_Git/.git/
+Kwoks-MBP:AP104_Git kwokpinglau$ ls -a
+.	..	.git
+Kwoks-MBP:AP104_Git kwokpinglau$ ls
+Kwoks-MBP:AP104_Git kwokpinglau$ ls -all
+total 0
+drwxr-xr-x   3 kwokpinglau  staff  102 Dec  6 09:51 .
+drwx------+ 15 kwokpinglau  staff  510 Dec  6 09:45 ..
+drwxr-xr-x  10 kwokpinglau  staff  340 Dec  6 09:51 .git
+Kwoks-MBP:AP104_Git kwokpinglau$ ls -all
+total 24
+drwxr-xr-x   5 kwokpinglau  staff   170 Dec  6 10:08 .
+drwx------+ 15 kwokpinglau  staff   510 Dec  6 09:45 ..
+-rw-r--r--@  1 kwokpinglau  staff  6148 Dec  6 10:08 .DS_Store
+drwxr-xr-x  10 kwokpinglau  staff   340 Dec  6 09:51 .git
+-rw-r--r--@  1 kwokpinglau  staff    70 Dec  6 10:08 1.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ ls -a
+.		..		.DS_Store	.git		1.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git add 1.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ ls -a
+.		..		.DS_Store	.git		1.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ .git
+-bash: .git: command not found
+Kwoks-MBP:AP104_Git kwokpinglau$ cd .git
+Kwoks-MBP:.git kwokpinglau$ pwd
+/Users/kwokpinglau/Documents/AP104_Git/.git
+Kwoks-MBP:.git kwokpinglau$ dir
+-bash: dir: command not found
+Kwoks-MBP:.git kwokpinglau$ ls
+HEAD		config		hooks		info		refs
+branches	description	index		objects
+Kwoks-MBP:.git kwokpinglau$ cd ..
+Kwoks-MBP:AP104_Git kwokpinglau$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   1.txt
+
+Kwoks-MBP:AP104_Git kwokpinglau$ rm AAA.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+[master (root-commit) 3ac6236] 我在這版本裡，加入了啥啥啥功能
+ 1 file changed, 5 insertions(+)
+ create mode 100644 1.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git log
+commit 3ac6236a905b9e22970334d1e6e099f40f1f6c17
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:17:16 2016 +0800
+
+    我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ pdw
+-bash: pdw: command not found
+Kwoks-MBP:AP104_Git kwokpinglau$ pwd
+/Users/kwokpinglau/Documents/AP104_Git
+Kwoks-MBP:AP104_Git kwokpinglau$ ls
+1.txt	2.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git add 2.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   2.txt
+
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+[master 250bb20] I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+ 1 file changed, 5 insertions(+)
+ create mode 100644 2.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git log
+commit 250bb2038cdbeb611a1a6e471480ed50619f73bb
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:30:19 2016 +0800
+
+    I am going to just add this random txt
+    kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+
+commit 3ac6236a905b9e22970334d1e6e099f40f1f6c17
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:17:16 2016 +0800
+
+    我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   1.txt
+	modified:   2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Kwoks-MBP:AP104_Git kwokpinglau$ git add -A
+Kwoks-MBP:AP104_Git kwokpinglau$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   1.txt
+	modified:   2.txt
+
+Kwoks-MBP:AP104_Git kwokpinglau$ git log
+commit 250bb2038cdbeb611a1a6e471480ed50619f73bb
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:30:19 2016 +0800
+
+    I am going to just add this random txt
+    kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+
+commit 3ac6236a905b9e22970334d1e6e099f40f1f6c17
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:17:16 2016 +0800
+
+    我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+[master bf03bf2] This is a whole new Version
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline
+bf03bf2 This is a whole new Version
+250bb20 I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+3ac6236 我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git diff bf03bf2 3ac6236
+diff --git a/1.txt b/1.txt
+index 02b746d..e5729d0 100644
+diff --git a/1.txt b/1.txt
+index 02b746d..e5729d0 100644
+--- a/1.txt
++++ b/1.txt
+@@ -1,3 +1,5 @@
+ kjfkldsjklafjlkajflkdjsklfjdslkfjdlksjflskafjlks
+ fdsfs
+-fdsfsa fsaas
+\ No newline at end of file
++fdsfsd
++
++fdsfdsf
+\ No newline at end of file
+diff --git a/2.txt b/2.txt
+deleted file mode 100644
+index 19369ec..0000000
+--- a/2.txt
++++ /dev/null
+@@ -1,6 +0,0 @@
+-kjfkldsjklafjlkajflkdjsklfjdslkfjdlksjflskafjlks
+-fdsfs
+-fdsfsd
+-
+Kwoks-MBP:AP104_Git kwokpinglau$ git branch
+* master
+Kwoks-MBP:AP104_Git kwokpinglau$ git checkout FBtest
+error: pathspec 'FBtest' did not match any file(s) known to git.
+Kwoks-MBP:AP104_Git kwokpinglau$ git checkout -b FBtest
+Switched to a new branch 'FBtest'
+Kwoks-MBP:AP104_Git kwokpinglau$ git branch
+* FBtest
+  master
+Kwoks-MBP:AP104_Git kwokpinglau$ pwd
+/Users/kwokpinglau/Documents/AP104_Git
+Kwoks-MBP:AP104_Git kwokpinglau$ ls
+1.txt	2.txt	3.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git add 3.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline
+bf03bf2 This is a whole new Version
+250bb20 I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+3ac6236 我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git log
+commit bf03bf2f38662947fd4cd1ac48d4451c68df8067
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:39:20 2016 +0800
+
+    This is a whole new Version
+
+commit 250bb2038cdbeb611a1a6e471480ed50619f73bb
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:30:19 2016 +0800
+
+    I am going to just add this random txt
+    kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+
+commit 3ac6236a905b9e22970334d1e6e099f40f1f6c17
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:17:16 2016 +0800
+
+    我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+[FBtest 1d90944] This is a new 3.txt
+ 1 file changed, 6 insertions(+)
+ create mode 100644 3.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git log
+commit 1d90944fcd320568f143d25aa7f5e9bc00a7a0f6
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:58:02 2016 +0800
+
+    This is a new 3.txt
+
+commit bf03bf2f38662947fd4cd1ac48d4451c68df8067
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:39:20 2016 +0800
+
+    This is a whole new Version
+
+commit 250bb2038cdbeb611a1a6e471480ed50619f73bb
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:30:19 2016 +0800
+
+    I am going to just add this random txt
+    kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+
+commit 3ac6236a905b9e22970334d1e6e099f40f1f6c17
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:17:16 2016 +0800
+Kwoks-MBP:AP104_Git kwokpinglau$ git branch
+* FBtest
+  master
+Kwoks-MBP:AP104_Git kwokpinglau$ git checkout master
+Switched to branch 'master'
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline --decorate -- graph --all
+Kwoks-MBP:AP104_Git kwokpinglau$ git branch FBtest
+fatal: A branch named 'FBtest' already exists.
+Kwoks-MBP:AP104_Git kwokpinglau$ git checkout FBtest
+Switched to branch 'FBtest'
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline --decorate -- graph --all
+Kwoks-MBP:AP104_Git kwokpinglau$ git checkout master
+Switched to branch 'master'
+Kwoks-MBP:AP104_Git kwokpinglau$ git branch 
+  FBtest
+* master
+Kwoks-MBP:AP104_Git kwokpinglau$ git merge FBtest
+Updating bf03bf2..1d90944
+Fast-forward
+ 3.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 3.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline --decorate -- graph --all
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline --decorate --graph --all
+* 1d90944 (HEAD -> master, FBtest) This is a new 3.txt
+* bf03bf2 This is a whole new Version
+* 250bb20 I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+* 3ac6236 我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git branch -D FBtest
+Deleted branch FBtest (was 1d90944).
+Kwoks-MBP:AP104_Git kwokpinglau$ git branch
+* master
+Kwoks-MBP:AP104_Git kwokpinglau$ get checkout -b kk
+-bash: get: command not found
+Kwoks-MBP:AP104_Git kwokpinglau$ git checkout -b kk
+Switched to a new branch 'kk'
+Kwoks-MBP:AP104_Git kwokpinglau$ git add -A
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+[kk ead1c83] This is KK
+ 1 file changed, 79 insertions(+), 1 deletion(-)
+Kwoks-MBP:AP104_Git kwokpinglau$ git log
+commit ead1c8376aab637958a5fce84d9ba58d2a0f2f89
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 11:33:18 2016 +0800
+
+    This is KK
+
+commit 1d90944fcd320568f143d25aa7f5e9bc00a7a0f6
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:58:02 2016 +0800
+
+    This is a new 3.txt
+
+commit bf03bf2f38662947fd4cd1ac48d4451c68df8067
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:39:20 2016 +0800
+
+    This is a whole new Version
+
+commit 250bb2038cdbeb611a1a6e471480ed50619f73bb
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 10:30:19 2016 +0800
+
+    I am going to just add this random txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git log -oneline
+fatal: unrecognized argument: -oneline
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline
+ead1c83 This is KK
+1d90944 This is a new 3.txt
+bf03bf2 This is a whole new Version
+250bb20 I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+3ac6236 我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git checkout master
+Switched to branch 'master'
+Kwoks-MBP:AP104_Git kwokpinglau$ git add -A
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+[master 21db8a5] This is kk - Testing
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline
+21db8a5 This is kk - Testing
+1d90944 This is a new 3.txt
+bf03bf2 This is a whole new Version
+250bb20 I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+3ac6236 我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline -graph --decorate
+fatal: unrecognized argument: -graph
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline --graph --decorate --all
+* 21db8a5 (HEAD -> master) This is kk - Testing
+| * ead1c83 (kk) This is KK
+|/  
+* 1d90944 This is a new 3.txt
+* bf03bf2 This is a whole new Version
+* 250bb20 I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+* 3ac6236 我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git merge kk
+Auto-merging 1.txt
+CONFLICT (content): Merge conflict in 1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+U	1.txt
+error: commit is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+Kwoks-MBP:AP104_Git kwokpinglau$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Kwoks-MBP:AP104_Git kwokpinglau$ git add 1.txt
+Kwoks-MBP:AP104_Git kwokpinglau$ git commit
+[master 210ddd5] Kept Both `Merge branch 'kk'
+Kwoks-MBP:AP104_Git kwokpinglau$ git log --oneline --decorate --graph --all
+*   210ddd5 (HEAD -> master) Kept Both `Merge branch 'kk'
+|\  
+| * ead1c83 (kk) This is KK
+* | 21db8a5 This is kk - Testing
+|/  
+* 1d90944 This is a new 3.txt
+* bf03bf2 This is a whole new Version
+* 250bb20 I am going to just add this random txt kfjldsjfklsjlfjslfslfdsjlkfjdsljflsdjflksdjfklsdjflksfjlkdsjflksjflksdjflksdjlfksdjlkfsdjflkjlskdjflkdsjflkjlkdsjfldskj
+* 3ac6236 我在這版本裡，加入了啥啥啥功能
+Kwoks-MBP:AP104_Git kwokpinglau$ git remote add origin https://github.com/kwokpingl/AP104.git
+Kwoks-MBP:AP104_Git kwokpinglau$ git push -u origin master
+Username for 'https://github.com': kwokpingl       
+Password for 'https://kwokpingl@github.com': 
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (20/20), 1.82 KiB | 0 bytes/s, done.
+Total 20 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/kwokpingl/AP104.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Kwoks-MBP:AP104_Git kwokpinglau$ cd ..
+Kwoks-MBP:Documents kwokpinglau$ git clone https://github.com/CloverSal/LeftHand.git
+Cloning into 'LeftHand'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+Kwoks-MBP:Documents kwokpinglau$ ls
+AP104_Git
+Adobe
+Adobe CS6 master collection Mac full version crack_serial_keygen_torrent [Free Download] » Macdrug.pdf
+Adobe Flash Builder 4.6
+Adobe Master Collection CS6 Full Serial Number Free Download - Softwares For PC.pdf
+FileZilla.app
+FileZilla_3.22.2.2_macosx-x86.app.tar.bz2
+FreeWha 6te.pdf
+LeftHand
+Top 10 YouTube Channels To Learn Programming And Coding.pdf
+macdrug.com_download_content_Aodobe server names.pdf
+【水危機】她年僅14歲已研發太陽能淨水方法，望解決全球水資源短缺難題 - TechStart 科技創誌｜PressLogic.pdf
+Kwoks-MBP:Documents kwokpinglau$ cd LeftHand
+Kwoks-MBP:LeftHand kwokpinglau$ ls
+1.txt
+Kwoks-MBP:LeftHand kwokpinglau$ git log
+commit 81e40b9bf70fe66e5eb03ab38932b3795778bd13
+Author: Sally <sallylau.tw@gmail.com>
+Date:   Tue Dec 6 13:43:53 2016 +0800
+
+    左手
+Kwoks-MBP:LeftHand kwokpinglau$ git add -A
+Kwoks-MBP:LeftHand kwokpinglau$ git commit
+[master c35f0eb] HAHAHAHA
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Kwoks-MBP:LeftHand kwokpinglau$ git log
+commit c35f0eb25a006b8d126f3d44d430a32ec11b0b87
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 13:52:11 2016 +0800
+
+    HAHAHAHA
+
+commit 81e40b9bf70fe66e5eb03ab38932b3795778bd13
+Author: Sally <sallylau.tw@gmail.com>
+Date:   Tue Dec 6 13:43:53 2016 +0800
+
+    左手
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Kwoks-MBP:LeftHand kwokpinglau$ git push https://github.com/CloverSal/LeftHand
+remote: Permission to CloverSal/LeftHand.git denied to kwokpingl.
+fatal: unable to access 'https://github.com/CloverSal/LeftHand/': The requested URL returned error: 403
+Kwoks-MBP:LeftHand kwokpinglau$ git log --decorate --oneline
+c35f0eb (HEAD -> master) HAHAHAHA
+81e40b9 (origin/master, origin/HEAD) 左手
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u original master
+fatal: 'original' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u origin master
+remote: Permission to CloverSal/LeftHand.git denied to kwokpingl.
+fatal: unable to access 'https://github.com/CloverSal/LeftHand.git/': The requested URL returned error: 403
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u origin master
+remote: Permission to CloverSal/LeftHand.git denied to kwokpingl.
+fatal: unable to access 'https://github.com/CloverSal/LeftHand.git/': The requested URL returned error: 403
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CloverSal/LeftHand.git
+   81e40b9..c35f0eb  master -> master
+Branch master set up to track remote branch master from origin.
+Kwoks-MBP:LeftHand kwokpinglau$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/CloverSal/LeftHand
+ * branch            master     -> FETCH_HEAD
+   c35f0eb..6d4e52c  master     -> origin/master
+Updating c35f0eb..6d4e52c
+Fast-forward
+ 1.txt | 35 ++++++++++++++++++++++++++++++++++-
+ 1 file changed, 34 insertions(+), 1 deletion(-)
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u origin master
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+Kwoks-MBP:LeftHand kwokpinglau$ git log 
+commit 6d4e52cb5456c7c09063af6ddb67e6a3c80f542c
+Author: Sally <sallylau.tw@gmail.com>
+Date:   Tue Dec 6 14:04:26 2016 +0800
+
+    新增多行
+
+commit c35f0eb25a006b8d126f3d44d430a32ec11b0b87
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 13:52:11 2016 +0800
+
+    HAHAHAHA
+
+commit 81e40b9bf70fe66e5eb03ab38932b3795778bd13
+Author: Sally <sallylau.tw@gmail.com>
+Date:   Tue Dec 6 13:43:53 2016 +0800
+
+    左手
+Kwoks-MBP:LeftHand kwokpinglau$ git add -A
+Kwoks-MBP:LeftHand kwokpinglau$ git commit
+[master e796840] WHAO WHAO WHAO WHAO YEAH WA HAHAAHAHA
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u origin master
+
+
+
+
+d
+^C
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 344 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CloverSal/LeftHand.git
+   6d4e52c..e796840  master -> master
+Branch master set up to track remote branch master from origin.
+Kwoks-MBP:LeftHand kwokpinglau$ git log
+commit e7968402cba7e9f3fc2698da584a18bc83d1ad51
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 14:09:09 2016 +0800
+
+    WHAO WHAO WHAO WHAO YEAH WA HAHAAHAHA
+
+commit 6d4e52cb5456c7c09063af6ddb67e6a3c80f542c
+Author: Sally <sallylau.tw@gmail.com>
+Date:   Tue Dec 6 14:04:26 2016 +0800
+
+    新增多行
+
+commit c35f0eb25a006b8d126f3d44d430a32ec11b0b87
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 13:52:11 2016 +0800
+
+    HAHAHAHA
+
+commit 81e40b9bf70fe66e5eb03ab38932b3795778bd13
+Author: Sally <sallylau.tw@gmail.com>
+Date:   Tue Dec 6 13:43:53 2016 +0800
+
+    左手
+Kwoks-MBP:LeftHand kwokpinglau$ git add -A
+Kwoks-MBP:LeftHand kwokpinglau$ git commit
+[master ed21ae0] kfdkljfkldsajfklajklfdalkfjdasklfjdlskajfldsajflkdsjalkffdjfklasjlfkdsjaflkdjsalkfjdslkjflskjafklsdjliq
+ 1 file changed, 380 insertions(+)
+Kwoks-MBP:LeftHand kwokpinglau$ git push -u origin master
+^C
+Kwoks-MBP:LeftHand kwokpinglau$ git pull origin master
+From https://github.com/CloverSal/LeftHand
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Kwoks-MBP:LeftHand kwokpinglau$ push -u origin master
+-bash: push: command not found
+Kwoks-MBP:LeftHand kwokpinglau$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 540 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CloverSal/LeftHand.git
+   e796840..ed21ae0  master -> master
+Kwoks-MBP:LeftHand kwokpinglau$ git log
+commit ed21ae0962ffc987453c4c7d8e89c874b4f461dd
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 14:12:51 2016 +0800
+
+    kfdkljfkldsajfklajklfdalkfjdasklfjdlskajfldsajflkdsjalkffdjfklasjlfkdsjaflkdjsalkfjdslkjflskjafklsdjliq
+
+commit e7968402cba7e9f3fc2698da584a18bc83d1ad51
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 14:09:09 2016 +0800
+
+    WHAO WHAO WHAO WHAO YEAH WA HAHAAHAHA
+
+commit 6d4e52cb5456c7c09063af6ddb67e6a3c80f542c
+Author: Sally <sallylau.tw@gmail.com>
+Date:   Tue Dec 6 14:04:26 2016 +0800
+
+    新增多行
+
+commit c35f0eb25a006b8d126f3d44d430a32ec11b0b87
+Author: kwokpingl <kwokpinglau.119@gmail.com>
+Date:   Tue Dec 6 13:52:11 2016 +0800
+
+Kwoks-MBP:LeftHand kwokpinglau$ git log --oneline --decorate --
+ed21ae0 (HEAD -> master, origin/master, origin/HEAD) kfdkljfkldsajfklajklfdalkfjdasklfjdlskajfldsajflkdsjalkffdjfklasjlfkdsjaflkdjsalkfjdslkjflskjafklsdjliq
+e796840 WHAO WHAO WHAO WHAO YEAH WA HAHAAHAHA
+6d4e52c 新增多行
+c35f0eb HAHAHAHA
+81e40b9 左手
+Kwoks-MBP:LeftHand kwokpinglau$ git pull origin master
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (4/4), done.
+Unpacking objects: 100% (12/12), done.
+remote: Total 12 (delta 4), reused 12 (delta 4), pack-reused 0
+From https://github.com/CloverSal/LeftHand
+ * branch            master     -> FETCH_HEAD
+   ed21ae0..114f505  master     -> origin/master
+Updating ed21ae0..114f505
+Fast-forward
+ 1.txt | 352 +------------------------------------------------------------------------------------------------------------
+ 1 file changed, 3 insertions(+), 349 deletions(-)
+Kwoks-MBP:LeftHand kwokpinglau$ 
